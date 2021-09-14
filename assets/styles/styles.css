@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+:root{
+  --background-color: rgba(0, 0, 0, 0.993);
+  --background-color-footer: rgba(0, 0, 0, 0.2);
+  --background-color-card: rgb(44, 43, 48);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background-color);
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 75vh;
+
+}
+
+header {
+    position: relative;
+    background-color: var(--background-color);
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+
+.about{
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about .container h4{
+  margin: 2rem;
+}
+  
+.logos img{
+  height: 80px;
+  width: auto;
+  margin: 1.75rem;
+  transition: all .5s ease;
+}
+
+.logos img:hover{
+  transform: scale(1.15);
+}
+
+.container{
+  text-align: center;
+}
+
+.cardspace {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  background-color:var(--background-color-card);
+  border: transparent;
+  border-radius: 22px;
+  width: 18rem;
+  margin: 2rem;
+  transition: all .5s ease;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card img{
+  border-radius: 22px;
+}
+
+.btn {
+  border: transparent;
+  color: white;
+  background-color: grey;
+  transition: all .5s ease;
+}
+
+.btn:hover{
+  color: white;
+  transform: scale(1.2);
+}
+
+.footer-base{
+  background-color: var(--background-color-footer);
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 940px){
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+}

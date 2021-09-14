@@ -12,9 +12,9 @@ async function init () {
       await node.type('a TeamPlayer!')
       await sleep(2000)
       await node.delete('a TeamPlayer!')
-      await node.type('Hard worker!')
+      await node.type('Hard working!')
       await sleep(2000)
-      await node.delete('Hard worker!')
+      await node.delete('Hard working!')
     }
   }
 

@@ -77,11 +77,20 @@ header .overlay {
 .about .container h4{
   margin: 2rem;
 }
-  
+ 
+.tech {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.tech div{
+  margin: 1rem;
+}
+
 .logos img{
-  height: 80px;
+  height: 60px;
   width: auto;
-  margin: 1.75rem;
   transition: all .5s ease;
 }
 
@@ -149,6 +158,10 @@ header .overlay {
 
 @media (max-width: 940px){
   .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .tech{
     display: flex;
     flex-direction: column;
   }

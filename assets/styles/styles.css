@@ -107,6 +107,13 @@ header .overlay {
   justify-content: space-around;
 }
 
+@media (max-width: 940px){
+  .cardspace {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .card{
   background-color:var(--background-color-card);
   border: transparent;

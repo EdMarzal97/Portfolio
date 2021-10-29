@@ -102,6 +102,11 @@ header .overlay {
   text-align: center;
 }
 
+.contact{
+  text-align: center;
+  padding: 2rem;
+}
+
 .cardspace {
   display: flex;
   justify-content: space-around;
@@ -121,7 +126,7 @@ header .overlay {
   height: 24rem;
   margin: 2rem;
   transition: all .5s ease;
-  background-size:contain ;
+  background-size: cover;
 }
 
 .card:hover{

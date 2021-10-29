@@ -115,12 +115,13 @@ header .overlay {
 }
 
 .card{
-  background-color:var(--background-color-card);
   border: transparent;
   border-radius: 22px;
-  width: 18rem;
+  width: 20rem;
+  height: 24rem;
   margin: 2rem;
   transition: all .5s ease;
+  background-size:contain ;
 }
 
 .card:hover{

@@ -133,6 +133,13 @@ header .overlay {
   transform: scale(1.05);
 }
 
+.card-body{
+  display: flex;
+  justify-content: end; 
+  flex-direction: column;
+  
+}
+
 .card img{
   border-radius: 22px;
 }

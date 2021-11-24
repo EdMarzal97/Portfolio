@@ -123,10 +123,11 @@ header .overlay {
   border: transparent;
   border-radius: 22px;
   width: 20rem;
-  height: 24rem;
+  height: 15rem;
   margin: 2rem;
   transition: all .5s ease;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .card:hover{

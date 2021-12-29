@@ -6,15 +6,9 @@ async function init () {
     await node.type('Im ')
     
     while (true) {
-      await node.type('a Front-end Developer!')
-      await sleep(2000)
-      await node.delete('a Front-end Developer!')
       await node.type('a Back-end Developer!')
       await sleep(2000)
       await node.delete('a Back-end Developer!')
-      await node.type('a Fullstack Developer!')
-      await sleep(2000)
-      await node.delete('a Fullstack Developer!')
       await node.type('a team player!')
       await sleep(2000)
       await node.delete('a team player!')
@@ -86,3 +80,4 @@ const handleScrollAnimation = () => {
 window.addEventListener('scroll', () => {
   handleScrollAnimation();
 })
+

@@ -1,72 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
-:root{
+:root {
   --background-color: rgba(0, 0, 0, 0.993);
   --background-color-footer: rgba(0, 0, 0, 0.2);
   --background-color-card: rgb(44, 43, 48);
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--background-color);
-    color: white;
+body {
+  background-color: var(--background-color);
+  color: white;
 }
 
-.header{
-    width: 100%;
-    height: 75vh;
+.header {
+  width: 100%;
+  height: 75vh;
 
 }
 
 header {
-    position: relative;
-    background-color: var(--background-color);
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
-  
+  position: relative;
+  background-color: var(--background-color);
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
 header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
 header .container {
-    position: relative;
-    z-index: 2;
-  }
-  
+  position: relative;
+  z-index: 2;
+}
+
 header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--background-color);
-    opacity: 0.5;
-    z-index: 1;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+  opacity: 0.5;
+  z-index: 1;
+}
 
 
-.about{
+.about {
   display: flex;
   justify-content: space-around;
   margin: 2rem;
@@ -74,35 +74,35 @@ header .overlay {
   text-align: center;
 }
 
-.about .container h4{
+.about .container h4 {
   margin: 2rem;
 }
- 
+
 .tech {
   display: flex;
   justify-content: space-around;
   margin: 2rem;
 }
 
-.tech div{
+.tech div {
   margin: 1rem;
 }
 
-.logos img{
+.logos img {
   height: 60px;
   width: auto;
   transition: all .5s ease;
 }
 
-.logos img:hover{
+.logos img:hover {
   transform: scale(1.15);
 }
 
-.container{
+.container {
   text-align: center;
 }
 
-.contact{
+.contact {
   text-align: center;
   padding: 2rem;
 }
@@ -112,14 +112,14 @@ header .overlay {
   justify-content: space-around;
 }
 
-@media (max-width: 940px){
+@media (max-width: 940px) {
   .cardspace {
     display: flex;
     flex-direction: column;
   }
 }
 
-.card{
+.card {
   border: transparent;
   border-radius: 22px;
   width: 20rem;
@@ -130,18 +130,18 @@ header .overlay {
   background-repeat: no-repeat;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.05);
 }
 
-.card-body{
-  display: flex;
-  justify-content: end; 
+.card-body {
+  display: flex-container;
+  justify-content: center;
   flex-direction: column;
-  
+  align-content: space-between;
 }
 
-.card img{
+.card img {
   border-radius: 22px;
 }
 
@@ -152,12 +152,12 @@ header .overlay {
   transition: all .5s ease;
 }
 
-.btn:hover{
+.btn:hover {
   color: white;
   transform: scale(1.2);
 }
 
-.footer-base{
+.footer-base {
   background-color: var(--background-color-footer);
 }
 
@@ -171,18 +171,20 @@ header .overlay {
     transform: translateX(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
-@media (max-width: 940px){
-  .about{
+@media (max-width: 940px) {
+  .about {
     display: flex;
     flex-direction: column;
   }
-  .tech{
+
+  .tech {
     display: flex;
     flex-direction: column;
   }

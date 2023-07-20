@@ -3,12 +3,12 @@ async function init () {
     
     await sleep(1000)
     node.innerText = ""
-    await node.type('Im ')
+    await node.type("I'm ")
     
     while (true) {
-      await node.type('a Full-stack Developer!')
+      await node.type('a Software Engineer!')
       await sleep(2000)
-      await node.delete('a Full-stack Developer!')
+      await node.delete('a Software Engineer!')
       await node.type('a team player!')
       await sleep(2000)
       await node.delete('a team player!')

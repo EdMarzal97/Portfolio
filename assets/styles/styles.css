@@ -141,6 +141,10 @@ header .overlay {
   align-content: space-between;
 }
 
+.card-buttons {
+  padding: 1rem;
+}
+
 .card img {
   border-radius: 22px;
 }

@@ -6,9 +6,9 @@ async function init () {
     await node.type("I'm ")
     
     while (true) {
-      await node.type('a Software Engineer!')
+      await node.type('a Software Developer!')
       await sleep(2000)
-      await node.delete('a Software Engineer!')
+      await node.delete('a Software Developer!')
       await node.type('a team player!')
       await sleep(2000)
       await node.delete('a team player!')
